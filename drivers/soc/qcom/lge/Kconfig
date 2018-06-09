@@ -457,3 +457,12 @@ config MACH_MSM8996_LUCYE_TRF_US_VZW
 	  	  Support for the Qualcomm MSM8996 LUCYE_TRF_US_VZW device.
 endmenu
 
+menu "LGE Specific Patches"
+
+config LGE_HALL_IC
+  bool "LGE HALL IC"
+	depends on MACH_LGE
+	help
+	  Support sending a device-tree defined gpio code when hall IC is triggered
+
+endmenu
